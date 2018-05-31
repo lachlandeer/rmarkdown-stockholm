@@ -17,8 +17,8 @@ snakemake packrat_install
 ```
 snakemake packrat_restore
 ```
-* In the `Snakefile` update the variable `YOUR_NAME` at the top as required
-*  Modify the Rmd file `Rmarkdown/cv.Rmd` as required
+* In the `Snakefile` update the variable `YOUR_PROJECT` at the top as required
+*  Modify the Rmd file `slides/test_presentation.Rmd` as required
 * Build the pdf using snakemake
 ```
 snakemake
