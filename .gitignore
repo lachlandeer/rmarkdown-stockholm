@@ -7,6 +7,13 @@
 *.vrb
 *.nav
 *.pdf
+*.toc
+*.aux
+*.fdb*
+*.log
+*.fls
 out/*
 logs/*
 .snakemake
+packrat/lib*/
+packrat/src/*
