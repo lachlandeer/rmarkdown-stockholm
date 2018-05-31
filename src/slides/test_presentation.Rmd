@@ -1,11 +1,11 @@
 ---
 title: "Your Title here"
 #subtitle: "A subtitle"
-author: 
+author:
   - "Lachlan Deer$^1$"
   - "John Snow$^2$"
   - "Humpty Dumpty$^2$"
-institute: 
+institute:
    - $^1$Juans Casa
    - $^2$Tus Place
 date: "Summer 2018"
@@ -14,7 +14,7 @@ output:
     latex_engine: xelatex
     theme: "sthlm"
     colortheme: "sthlm"
-    fonttheme: "sthlmfont"
+    fonttheme: "sthlm"
     slide_level: 2
     #keep_tex: TRUE
 classoption: "progressbar"
@@ -38,7 +38,7 @@ When you click the **Knit** button a document will be generated that includes bo
 * Bullet 2
 * Bullet 3
     * sub bullet
-    
+
 \alert{sthlm}
 
 ## Slide with R Output
@@ -52,4 +52,3 @@ summary(cars)
 ```{r pressure}
 plot(pressure)
 ```
-
