@@ -8,3 +8,4 @@
 *.nav
 *.pdf
 out/*
+logs/*
