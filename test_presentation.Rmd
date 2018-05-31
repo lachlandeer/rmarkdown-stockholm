@@ -1,0 +1,55 @@
+---
+title: "Your Title here"
+#subtitle: "A subtitle"
+author: 
+  - "Lachlan Deer$^1$"
+  - "John Snow$^2$"
+  - "Humpty Dumpty$^2$"
+institute: 
+   - $^1$Juans Casa
+   - $^2$Tus Place
+date: "Summer 2018"
+output:
+  beamer_presentation:
+    latex_engine: xelatex
+    theme: "sthlm"
+    colortheme: "sthlm"
+    fonttheme: "sthlmfont"
+    slide_level: 2
+    #keep_tex: TRUE
+classoption: "progressbar"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+# a section
+
+## Slide with Bullets
+
+* Bullet 1
+* Bullet 2
+* Bullet 3
+    * sub bullet
+    
+\alert{sthlm}
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
