@@ -13,13 +13,23 @@ STY_FILES = [os.path.splitext(os.path.basename(sty_files))[0]
                     for sty_files in glob.glob("src/slides/" +
                         "*.sty")]
 
-print(STY_FILES)
+#print(STY_FILES)
 
 # --- Variable Declarations ---- #
 runR = "Rscript --no-save --no-restore --verbose"
 logAll = "2>&1"
 
 # --- Build Rules --- #
+## install:
+rule install:
+    input:
+        "out/" + YOUR_PROJECT + "-slides.pdf"
+    output:
+        YOUR_PROJECT + "-slides.pdf"
+    shell:
+        "cp {input} {output}"
+
+
 ## run_rmd:  knits the Rmd file into output
 rule run_rmd:
     input:
