@@ -45,3 +45,25 @@ rule run_rmd:
     shell:
         "{runR} {input.runner} {input.rmd_file} {output.pdf} \
             > {log} {logAll}"
+
+# --- Packrat Rules --- #
+rule packrat_install:
+    shell:
+        "R -e 'install.packages(\"packrat\", repos=\"http://cran.us.r-project.org\")'"
+
+rule packrat_init:
+    shell:
+        "R -e 'packrat::init()'"
+
+rule packrat_snap:
+    shell:
+        "R -e 'packrat::snapshot()'"
+
+rule packrat_restore:
+    shell:
+        "R -e 'packrat::restore()'"
+
+# --- Clean Rules --- #
+rule clean:
+    shell:
+        "rm -rf out/* *.pdf"
